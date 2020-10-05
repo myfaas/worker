@@ -29,13 +29,13 @@ func InitPool(cli *client.Client) {
 		// 创建容器
 		resp, err := cli.ContainerCreate(
 			ctx, 
-			&container.Config{
+			&container.Config {
 				Image: image_name,
 				Cmd:   []string{"/bin/bash"},
 				Tty:   true,
 			}, 
-			&container.HostConfig{
-				Mounts: []mount.Mount{
+			&container.HostConfig {
+				Mounts: []mount.Mount {
 					{
 						Type:   mount.TypeBind,
 						Source: config.LambdasDirPath,

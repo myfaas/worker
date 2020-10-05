@@ -15,7 +15,7 @@ func main() {
 		panic(err)
 	}
 
-	// 初始化, 开启一堆容器
+	// 初始化, 开启一个容器池
 	sandbox.InitPool(cli)
 
 	// 监听请求
